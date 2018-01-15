@@ -12,12 +12,14 @@
 <nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Tom's<br>Game Blog</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <h3 class="w3-padding-64">
+      <b>Tom's<br>Game Blog</b>
+      <br />
+      <p class="w3-medium" style="margin-top: 75px">
+          Why I want to talk about the games that I love playing. 
+          Honestly, I've only played I think two of these games, but that doesn't lend itself very well to a demo.
+      </p>
+    </h3>
   </div>
 </nav>
 
@@ -35,40 +37,31 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>My Favorite Games</b></h1>
-    <h1 class="w3-xxxlarge w3-text-blue"><b>List.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <h1 class="w3-jumbo" style="color: #2196F3"><b>My Favorite Games</b></h1>
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="http://worksdesigngroup.com/wp-content/uploads/2014/03/games1.png" style="width:100%" onclick="onClick(this)" alt="Super Mario Bros.">
-      <img src="https://cdn.tutsplus.com/psd/uploads/legacy/psdtutsarticles/linkb_60vgamecovers/27.jpg" style="width:100%" onclick="onClick(this)" alt="Mass Effect">
-      <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-game-covers-2016/large/xcom-2-cover.jpg?1384968217" style="width:100%" onclick="onClick(this)" alt="Xcom 2">
+      <img src="https://cf.geekdo-images.com/images/pic3239104_md.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of Citadels">
+      <img src="https://cf.geekdo-images.com/images/pic2305263_md.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of Arcadia Quest">
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/b4/26/06/b426065bd0e8696a011f62e75cfcad2e.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of D&amp;D">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/61WTe04UdOL.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of Clue">
+      <img src="https://i.pinimg.com/736x/a6/bd/7b/a6bd7b4e4182095ac9589b13d1db914d--game-boards-board-games.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of Pandemic">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51I3LSiY5ML.jpg" style="width:100%" onclick="onClick(this)" alt="Here's where I describe the games I played of Monopoly">
     </div>
   </div>
 
-  <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid blue" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" requiblue>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" requiblue>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" requiblue>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
-    </form>  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
   </div>
 
 <!-- End page content -->
